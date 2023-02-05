@@ -1,0 +1,254 @@
+/* Header Section */
+
+body {
+    margin: 0;
+}
+header {
+    background-color: #533A7B;
+    padding: 15px;
+    box-shadow: 5px 10px 10px #221833;
+    background-image: linear-gradient(rgba(105, 105, 105, 0.5), rgba(0, 0, 0, 0.5));
+}
+header ul {
+    float: right;
+    color: white;
+    font-family: "Bebas Neue", display;
+    font-weight: bold;  
+}
+header li {
+    display: inline-block;
+    padding: 0px 5px;
+}
+header img {
+  height: 50px;  
+  object-fit: contain;
+}
+header p {
+    display: inline-block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+@media screen and (max-width: 600px) {
+  header ul {
+    display: inline-block;
+    margin: auto;
+    padding-top: 10px;
+    float: none;
+    position: relative;
+  }
+  header {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  header img {
+    float: none;
+    width: 100%;
+    position: relative;
+  }
+}
+
+/* Hero Image Section */
+
+.heroImg {
+    background-color: #EBEBEB;
+    padding: 100px 15px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/heroPlaceholder.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.divider {
+    background-color: #533A7B;
+    padding: 15px;
+    color: white;
+    background-image: linear-gradient(rgba(105, 105, 105, 0.5), rgba(0, 0, 0, 0.5));
+    box-shadow: 0px -10px 25px 8px #221833;
+}
+.content {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 50px;
+    color: white;
+    text-align: center;
+}
+  .content h1 {
+    font-family: "Bebas Neue", display;
+    font-weight: bold;
+    font-size: xx-large;
+}
+  .content p {
+    font-family: "Bebas Neue", display;
+}
+  button {
+    padding: 15px;
+    background-color: #533A7B;
+    color: white;
+    font-family: "Bebas Neue", display;
+    font-size: 15px;
+    border-radius: 4px;
+    box-shadow: 3px 6px 8px #221833;
+}
+@media screen and (max-width: 600px) {
+  .heroImg {
+    background-size: cover;
+    background-position: left;
+  }
+}
+
+  /* My Skills Section */
+
+  .heading {
+    text-align: center;
+    padding: 15px 5px;
+    font-size: 30px;
+    font-family: "Bebas Neue", display;
+}
+  .flexContainer {
+    display: flex;
+    padding: 60px 30px;
+    font-family: "Bebas Neue", display;
+}
+  .flexContainer div {
+    width: 33%;
+    padding: 25px;
+}
+  .breaker {
+    background-color: #533A7B;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 400px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+    background-image: linear-gradient(rgba(105, 105, 105, 0.5), rgba(0, 0, 0, 0.5));
+  }
+@media screen and (max-width: 600px) {
+  .flexContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 30px 30px;
+  }
+  .flexContainer div {
+    width: 100%;
+  }
+  .heading {
+    padding: 15px 5px;
+  }
+  .breaker {
+    margin: 100px;
+  }
+}
+
+  /* My Work Section */
+
+  .myWork {
+    padding: 60px 30px;
+    padding-top: 10px;
+    background-color: white;
+}
+  .workGrid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 350px 350px 350px;
+    grid-template-areas:
+    "img1 content1"
+    "content2 img2"
+    "img3 content3"
+    ;
+    overflow: auto;
+}
+  .workGrid img {
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+    display: block;
+}
+  .img1 {
+    grid-area: img1;
+}
+  .img2 {
+    grid-area: img2;
+}
+  .img3 {
+    grid-area: img3;
+}
+  .img1, .img2, .img3, .content1, .content2, .content3 {
+    padding: 80px;
+}
+  .content1 {
+    grid-area: content1;
+    font-family: "Bebas Neue", display;
+}
+  .content2 {
+    grid-area: content2;
+    font-family: "Bebas Neue", display;
+}
+  .content3 {
+    grid-area: content3;
+    font-family: "Bebas Neue", display;
+}
+@media screen and (max-width: 600px) {
+  .workGrid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "img1" 
+    "content1"
+    "img2" 
+    "content2"
+    "img3" 
+    "content3"
+    ;    
+  }
+  .img1, .img2, .img3, .content1, .content2, .content3 {
+    padding: 20px;
+}
+}
+
+  /* Footer Section */
+
+  footer {
+    background-color: #533A7B;
+    padding: 5px;
+    color: white;
+    background-image: linear-gradient(rgba(105, 105, 105, 0.5), rgba(0, 0, 0, 0.5));
+}
+  .footer-left {
+    font-family: "Bebas Neue", display;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+  }
+  .navLinks li {
+    position: relative;
+    top: 30px;
+    display: inline-block;
+    padding: 5px;     
+  }
+  .footer-right {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 30px;
+    position: relative;
+    bottom: 35px;    
+  }
+  .footer-right > div {
+    margin-right: 10px;
+  }
+  @media screen and (max-width: 600px) {
+    .footer-right {
+      padding-right: 10px;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .navLinks {
+      padding-left: 15px;
+    }
+  }
+
+
+
