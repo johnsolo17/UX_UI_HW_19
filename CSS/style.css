@@ -13,7 +13,8 @@ header ul {
     float: right;
     color: white;
     font-family: "Bebas Neue", display;
-    font-weight: bold;  
+    font-weight: bold;
+    font-size: larger; 
 }
 header li {
     display: inline-block;
@@ -58,7 +59,7 @@ header p {
     background-repeat: no-repeat;
     position: relative;
 }
-.divider {
+.divider1 {
     background-color: #533A7B;
     padding: 15px;
     color: white;
@@ -66,7 +67,7 @@ header p {
     box-shadow: 0px -10px 25px 8px #221833;
 }
 .content {
-    max-width: 300px;
+    max-width: 350px;
     margin: 0 auto;
     padding: 50px;
     color: white;
@@ -79,15 +80,18 @@ header p {
 }
   .content p {
     font-family: "Bebas Neue", display;
+    font-size: large;
+    padding-bottom: 10px;
 }
   button {
+    background-image: linear-gradient(rgba(105, 105, 105, 0.5), rgba(0, 0, 0, 0.5));
     padding: 15px;
     background-color: #533A7B;
     color: white;
     font-family: "Bebas Neue", display;
     font-size: 15px;
     border-radius: 4px;
-    box-shadow: 3px 6px 8px #221833;
+    box-shadow: 3px 6px 8px #211e25;
 }
 @media screen and (max-width: 600px) {
   .heroImg {
@@ -101,7 +105,7 @@ header p {
   .heading {
     text-align: center;
     padding: 15px 5px;
-    font-size: 30px;
+    font-size: xx-large;
     font-family: "Bebas Neue", display;
 }
   .flexContainer {
@@ -111,18 +115,33 @@ header p {
 }
   .flexContainer div {
     width: 33%;
-    padding: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 60px;
+    padding-right: 60px;
 }
-  .breaker {
-    background-color: #533A7B;
-    border-radius: 10px;
-    padding: 5px;
-    margin: 400px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    color: white;
-    background-image: linear-gradient(rgba(105, 105, 105, 0.5), rgba(0, 0, 0, 0.5));
-  }
+.h-divider {
+  margin: auto;
+  margin-top: 80px;
+  width: 80%;
+  position: relative;
+}
+
+.h-divider .shadow {
+  overflow: hidden;
+  height: 40px;
+}
+
+.h-divider .shadow:after {
+  content: '';
+  display: block;
+  margin: -25px auto 0;
+  width: 100%;
+  height: 25px;
+  border-radius: 125px/12px;
+  box-shadow: 0 0 8px black;
+}
+
 @media screen and (max-width: 600px) {
   .flexContainer {
     display: flex;
@@ -137,9 +156,6 @@ header p {
   .heading {
     padding: 15px 5px;
   }
-  .breaker {
-    margin: 100px;
-  }
 }
 
   /* My Work Section */
@@ -148,6 +164,9 @@ header p {
     padding: 60px 30px;
     padding-top: 10px;
     background-color: white;
+}
+.myWork h4 {
+  font-size: x-large;
 }
   .workGrid {
     display: grid;
@@ -168,12 +187,18 @@ header p {
 }
   .img1 {
     grid-area: img1;
+    margin-top: -50px;
+    padding-bottom: 50px;
 }
   .img2 {
     grid-area: img2;
+    margin-top: -50px;
+    margin-bottom: 50px;
 }
   .img3 {
     grid-area: img3;
+    margin-top: -50px;
+    margin-bottom: 50px;
 }
   .img1, .img2, .img3, .content1, .content2, .content3 {
     padding: 80px;
@@ -181,14 +206,32 @@ header p {
   .content1 {
     grid-area: content1;
     font-family: "Bebas Neue", display;
+    padding-top: 20px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
   .content2 {
     grid-area: content2;
     font-family: "Bebas Neue", display;
+    padding-top: 20px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
   .content3 {
     grid-area: content3;
     font-family: "Bebas Neue", display;
+    padding-top: 20px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 @media screen and (max-width: 600px) {
   .workGrid {
