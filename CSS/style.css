@@ -12,13 +12,16 @@ header {
 header ul {
     float: right;
     color: white;
+    text-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     font-family: "Bebas Neue", display;
     font-weight: bold;
-    font-size: larger; 
+    font-size: x-large; 
 }
 header li {
     display: inline-block;
     padding: 0px 5px;
+    position: relative;
+    bottom: 10px;
 }
 header img {
   height: 50px;  
@@ -35,6 +38,7 @@ header p {
     padding-top: 10px;
     float: none;
     position: relative;
+    top: 10px;
   }
   header {
     text-align: center;
@@ -264,34 +268,132 @@ header p {
 
 /* Project Showcase Section */
 
-.column {
-  float: left;
-  padding: 10px;
+.project1 {
+  padding: 60px 30px;
+  padding-top: 10px;
+  background-color: white;
+  font-family: "Bebas Neue", display;
+  font-size: larger;
+}
+.project1 h4 {
+font-size: x-large;
+}
+.workGrid1 {
+  display: block;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;  
+}
+.workGrid1 img {
+  width: 100%;
+  max-width: 250px;
+  margin: 0 auto;
+}
+.solutionList {
+  text-align: left;
+}
+.project1 button {
+  position: relative;
+  top: 30px;
+  margin-bottom: 20px;
 }
 
-/* Left and right column */
-.column.side {
-  width: 20%;  
-}
-.column.side2 {
-  width: 20%;  
-}
+  /* Research Area */
 
-/* Middle column */
-.column.middle {
+.researchArea {
+    padding: 60px 30px;
+    padding-top: 10px;
+    background-color: white;
+}
+.researchArea, .researchGrid1 h4 {
+  font-size: x-large;
+  font-family: "Bebas Neue", display;
+  text-align: center;
+  margin-top: 2px;
+  padding-top: 6px;
+}
+.researchGrid1 li {
+  font-size: large;
+  font-family: "Bebas Neue", display;
+}
+.researchGrid, .researchGrid1 {
+  margin: 0 auto;
+  overflow: auto;
+  padding-bottom: 5px;
+}
+.researchGrid img {
+  width: 90%;  
+  display: block;
+  margin: 0 auto;
+}
+.researchContent1 {
+  margin: 0 auto;
   width: 50%;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  padding-right: 10px;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
-
-/* Clear floats after the columns */
-
-.row:after {
+.researchContent3 { 
+  margin: 0 auto;
+  width: 20%;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  padding-right: 10px;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.researchImg1 {
+  border-radius: 10px;
+  float: left;
+  padding: 8px;
+  width: 48%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.researchImg2 {
+  border-radius: 10px;
+  float: right;
+  padding: 8px;
+  width: 48%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.researchGrid:after {
   content: "";
   display: table;
   clear: both;
 }
-@media screen and (max-width: 600px) {
-  .column.side, .column.middle, .column.side2 {
-    width: 85%;
+
+/* User Journey */
+
+.researchArea1 {
+  padding: 60px 30px;
+  padding-top: 10px;
+  background-color: white;
+}
+.journeyArea {
+  margin: 0 auto;
+  overflow: auto;
+  padding-bottom: 5px;
+}
+.journeyArea:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width:600px) {
+  .researchImg1, .researchImg2 {
+    width: 95%;
+    float: none;
+    margin-bottom: 20px;
+  }
+  .researchContent1 {
+    width: 90%;
+  }
+  .researchContent3 {
+    width: 70%;
   }
 }
 
