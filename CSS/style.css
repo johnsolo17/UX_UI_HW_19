@@ -365,24 +365,6 @@ font-size: x-large;
   display: table;
   clear: both;
 }
-
-/* User Journey */
-
-.researchArea1 {
-  padding: 60px 30px;
-  padding-top: 10px;
-  background-color: white;
-}
-.journeyArea {
-  margin: 0 auto;
-  overflow: auto;
-  padding-bottom: 5px;
-}
-.journeyArea:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 @media screen and (max-width:600px) {
   .researchImg1, .researchImg2 {
     width: 95%;
@@ -396,6 +378,150 @@ font-size: x-large;
     width: 70%;
   }
 }
+
+/* User Journey */
+
+.researchArea1 {
+  padding: 60px 30px;
+  padding-top: 10px;
+  background-color: white;
+}
+.journeyArea {
+  margin: 0 auto;
+  overflow: auto;
+  padding-bottom: 5px;
+}
+.journeyArea h4 {
+  font-size: x-large;
+  font-family: "Bebas Neue", display;
+  text-align: center;
+  margin-top: 2px;
+  padding-top: 6px;
+}
+.journeyArea img {
+  width: 90%;  
+  display: block;
+  margin: 0 auto;  
+}
+.researchImg3 {
+  width: 48%;
+  float: right;
+  padding: 8px;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.researchImg4 {
+  width: 48%;
+  float: left;
+  padding: 8px;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.journeyArea:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.journeyInfo {
+  margin: 0 auto;
+  width: 50%;
+  margin-bottom: 20px;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  padding-right: 10px;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;  
+}
+.journeyInfo p {
+  text-align: center;
+  font-size: large;
+  font-family: "Bebas Neue", display;  
+}
+.matrixBox {
+  padding: 60px 30px;
+  padding-top: 10px;
+  background-color: white;
+}
+.pMatrix {
+  margin: 0 auto;
+  overflow: auto;
+  padding-bottom: 5px;
+}
+.pMatrix img {
+  width: 70%;  
+  display: block;
+  margin: 0 auto;
+  padding: 8px;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;    
+}
+.pMatrix h4 {
+  font-size: x-large;
+  font-family: "Bebas Neue", display;
+  text-align: center;
+  margin-top: 2px;
+  padding-top: 6px;
+}
+.matrixExplain {
+  text-align: center;
+  font-size: large;
+  font-family: "Bebas Neue", display;
+  margin: 0 auto;
+  width: 50%;
+  position: relative;
+  top: -20px;
+  margin-bottom: 20px;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  padding-right: 10px;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; 
+}
+@media screen and (max-width:600px) {
+  .researchImg3 {
+    width: 95%;
+    float: none;
+    margin-bottom: 20px;
+  }
+  .researchImg4 {
+    width: 95%;
+    float: none;    
+  }
+  .journeyInfo {
+    width: 80%;
+    position: relative;
+    top: -20px;
+  }
+  .pMatrix img {
+    width: 95%;
+  }
+  .matrixExplain {
+    width: 85%;
+  }
+}
+
+  /* User Flow Section */
+
+  .userFlowarea {
+    padding: 60px 30px;
+    padding-top: 10px;
+    background-color: white;
+  }
+  .flowArea {
+    margin: 0 auto;
+    overflow: auto;
+    padding-bottom: 5px;
+  }
+  .flowArea img {
+    width: 70%;  
+    display: block;
+    margin: 0 auto;
+    padding: 8px;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;    
+  }
 
   /* Footer Section */
 
